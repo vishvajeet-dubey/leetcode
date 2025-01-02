@@ -1,6 +1,7 @@
--- Write your PostgreSQL query statement below
-SELECT
+SELECT 
     tweet_id
-FROM
+FROM 
     tweets
-WHERE LENGTH(content)>15;
+WHERE 
+    content IS NOT NULL 
+    AND LENGTH(content) > 15;
